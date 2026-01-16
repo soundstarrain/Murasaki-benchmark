@@ -1,0 +1,7 @@
+openai
+pandas
+python-dotenv
+tqdm
+unbabel-comet
+torch
+nest_asyncio
