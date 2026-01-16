@@ -1,4 +1,6 @@
+import os
 from comet import download_model, load_from_checkpoint
+from huggingface_hub import hf_hub_download
 import torch
 import pandas as pd
 
@@ -14,14 +16,34 @@ def load_comet():
 
     print("Loading COMET model...")
     try:
-        COMET_MODEL_PATH = download_model("Unbabel/wmt22-comet-da")
+        # Try Loading XCOMET-XL
+        print("Attempting to load Unbabel/XCOMET-XL...")
+        try:
+             # First try direct download (if supported in future versions)
+            COMET_MODEL_PATH = download_model("Unbabel/XCOMET-XL")
+        except Exception:
+            # Fallback: Download from HuggingFace Hub manually
+            print("Direct download not supported, fetching from HuggingFace Hub...")
+            COMET_MODEL_PATH = hf_hub_download(repo_id="Unbabel/XCOMET-XL", filename="checkpoints/model.ckpt")
+        
         comet_model = load_from_checkpoint(COMET_MODEL_PATH)
-        if torch.cuda.is_available():
-            comet_model = comet_model.to("cuda")
-        print("COMET model loaded successfully.")
+        print(f"Loaded XCOMET-XL from {COMET_MODEL_PATH}")
+
     except Exception as e:
-        print(f"Failed to load COMET model: {e}")
-        comet_model = None
+        print(f"Failed to load XCOMET-XL: {e}")
+        print("Falling back to Unbabel/wmt22-comet-da...")
+        try:
+            COMET_MODEL_PATH = download_model("Unbabel/wmt22-comet-da")
+            comet_model = load_from_checkpoint(COMET_MODEL_PATH)
+            print("Loaded wmt22-comet-da successfully.")
+        except Exception as e2:
+             print(f"Failed to load fallback model: {e2}")
+             comet_model = None
+             return
+
+    if torch.cuda.is_available():
+        comet_model = comet_model.to("cuda")
+    print("COMET model loaded successfully.")
 
 
 def evaluate_metrics(df):

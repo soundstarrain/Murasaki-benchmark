@@ -131,7 +131,7 @@ graph LR
 | Temperature | 1.0 |
 | System Prompt | 标准化 ([pipeline/config.py](pipeline/config.py)) |
 | 特殊情况 | Sakura 模型使用官方推荐设置 |
-| 指标 | COMET (Unbabel/wmt22-comet-da) |
+| 指标 | COMET (Unbabel/XCOMET-XL) |
 
 ---
 

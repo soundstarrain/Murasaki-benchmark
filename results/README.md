@@ -43,5 +43,5 @@ results/
 
 ## 评测说明
 
-- 使用 Unbabel/wmt22-comet-da 模型计算COMET分数
+- 使用 Unbabel/XCOMET-XL 模型计算COMET分数
 - COMET分数范围通常在0-1之间，越高表示翻译质量越好

@@ -131,7 +131,7 @@ Covers major genres from commercial light novels and *Syosetu* web novels:
 | Temperature | 1.0 |
 | System Prompt | Standardized ([pipeline/config.py](pipeline/config.py)) |
 | Special Cases | Sakura models use official recommended settings |
-| Metric | COMET (Unbabel/wmt22-comet-da) |
+| Metric | COMET (Unbabel/XCOMET-XL) |
 
 ---
 

@@ -5,3 +5,8 @@ tqdm
 unbabel-comet
 torch
 nest_asyncio
+huggingface_hub
+matplotlib
+seaborn
+matplotlib
+seaborn

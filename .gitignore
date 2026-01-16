@@ -51,8 +51,8 @@ env/
 *.zip
 *.7z
 
-# 大文件 (可选)
-# data.rar
+# 重新评测脚本
+reeval.py
 
 # COMET模型缓存
 .cache/
