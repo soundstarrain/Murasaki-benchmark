@@ -140,7 +140,7 @@ Covers major genres from commercial light novels and *Syosetu* web novels:
 ### Installation
 
 ```bash
-git clone https://github.com/your-repo/murasaki-benchmark
+git clone https://github.com/soundstarrain/murasaki-benchmark
 cd murasaki-benchmark
 pip install -r requirements.txt
 ```
