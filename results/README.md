@@ -9,26 +9,26 @@ results/
 ├── model_comparison_report.html # 可视化对比报告
 ├── murasaki_benchmark_chart.png # 评测结果图表
 └── models/                      # 各模型详细结果
-    ├── gpt-5-chat-latest/
-    │   ├── gpt-5-chat-latest_run1.csv
-    │   ├── gpt-5-chat-latest_run2.csv
-    │   └── gpt-5-chat-latest_run3.csv
-    └── ...
+    └── <model_name>/
+        ├── dataset_Short_run1.jsonl  # 短文本评测结果
+        └── dataset_Long_run1.jsonl   # 长文本评测结果
 ```
 
 ## 结果文件格式
 
-### 模型结果CSV
+### 模型结果JSONL
 
-每个模型的结果文件包含以下列：
+每个模型的结果文件为JSONL格式，每行包含以下字段：
 
-| 列名 | 说明 |
+| 字段 | 说明 |
 |------|------|
 | `src` | 日语源文本 |
 | `ref` | 中文参考译文 |
-| `model_output` | 模型生成的译文 |
 | `category` | 类别 (Short/Long) |
-| `comet_score` | 句子级COMET分数 |
+| `model_output` | 模型生成的译文 |
+| `model_name` | 模型名称 |
+
+> **注意**: COMET分数在评测流程中计算，汇总保存在 `final_comet_scores.csv` 中，不单独存储在每条记录。
 
 ### COMET分数汇总
 
