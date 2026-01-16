@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/License-GPL%203.0-blue.svg" alt="License">
   </a>
   <img src="https://img.shields.io/badge/Python-3.10+-green" alt="Python">
-  <img src="https://img.shields.io/badge/Models-31-orange" alt="Models">
+  <img src="https://img.shields.io/badge/Models-33-orange" alt="Models">
   <img src="https://img.shields.io/badge/Domain-ACGN-pink" alt="Domain">
 </p>
 
@@ -30,47 +30,49 @@
 
 <br>
 
-> **Murasaki Benchmark** provides two paragraph-level datasets (Short/Long) to evaluate how well LLM translations align with professional human references in the **ACGN domain**. Using COMET metric, we measure the semantic similarity between machine translations and authoritative reference translations at the paragraph level.
+> **Murasaki Benchmark** provides two paragraph-level datasets (Short/Long) to evaluate how well LLM translations align with professional human references in the **ACGN domain**. Using XCOMET metric, we measure the semantic similarity between machine translations and authoritative reference translations at the paragraph level.
 
 ---
 
 ## Leaderboard
 
-We evaluated **SOTA commercial and mainstream open-source LLMs** using the COMET metric.
+We evaluated **SOTA commercial and mainstream open-source LLMs** using the XCOMET metric.
 
 | Rank | Model | Short | Long | Avg |
 |:----:|:------|:-----:|:----:|:---:|
 | 🥇 | **Gemini 3 Flash Preview** | 0.826 | 0.876 | **0.851** |
 | 🥈 | **Sakura-Qwen-2.5-14B** | 0.828 | 0.874 | **0.851** |
-| 🥉 | **GPT-5-chat-latest** | 0.825 | 0.876 | **0.851** |
-| 4 | Gemini 2.5 Flash | 0.824 | 0.877 | 0.851 |
-| 5 | GPT-4.1 | 0.826 | 0.873 | 0.849 |
-| 6 | Gemini 3 Pro Preview | 0.824 | 0.875 | 0.849 |
-| 7 | Claude Opus 4.5 | 0.824 | 0.873 | 0.849 |
-| 8 | Claude Haiku 4.5 | 0.824 | 0.869 | 0.847 |
-| 9 | Claude Haiku 4.5 Thinking | 0.825 | 0.865 | 0.845 |
+| 🥉 | **GPT-5-chat-latest** | 0.825 | 0.876 | **0.850** |
+| 4 | Gemini 3 Pro Preview | 0.824 | 0.874 | 0.849 |
+| 5 | GPT-4.1 | 0.826 | 0.872 | 0.849 |
+| 6 | Claude Opus 4.5 | 0.824 | 0.873 | 0.848 |
+| 7 | Gemini 2.5 Flash | 0.824 | 0.873 | 0.848 |
+| 8 | Claude Haiku 4.5 | 0.824 | 0.870 | 0.847 |
+| 9 | Claude Haiku 4.5 Thinking | 0.825 | 0.866 | 0.845 |
 | 10 | DeepSeek V3.2 Thinking | 0.818 | 0.870 | 0.844 |
-| 11 | Claude Sonnet 4.5 | 0.815 | 0.868 | 0.842 |
-| 12 | Qwen3-14B | 0.812 | 0.870 | 0.841 |
-| 13 | GLM-4.7 | 0.810 | 0.866 | 0.838 |
-| 14 | o3-mini | 0.811 | 0.866 | 0.838 |
-| 15 | o3 | 0.811 | 0.863 | 0.837 |
-| 16 | DeepSeek V3.1 Think | 0.812 | 0.862 | 0.837 |
-| 17 | GPT-5-mini | 0.812 | 0.861 | 0.836 |
-| 18 | Qwen3-235B-A22B | 0.823 | 0.848 | 0.836 |
-| 19 | Qwen3-32B | 0.819 | 0.846 | 0.832 |
-| 20 | Dolphin3.0-R1-Mistral-24B | 0.806 | 0.858 | 0.832 |
-| 21 | Llama-3.1-70B | 0.809 | 0.852 | 0.831 |
-| 22 | DeepSeek V3.2 | 0.810 | 0.851 | 0.830 |
-| 23 | Mistral Large | 0.803 | 0.856 | 0.830 |
-| 24 | Gemini 2.0 Flash | 0.814 | 0.843 | 0.829 |
-| 25 | Llama-3.1-405B | 0.801 | 0.851 | 0.826 |
-| 26 | Kimi-K2 | 0.778 | 0.841 | 0.810 |
-| 27 | DeepSeek V3.1 | 0.795 | 0.824 | 0.809 |
-| 28 | Qwen3-8B | 0.760 | 0.839 | 0.799 |
-| 29 | Grok-4.1-fast | 0.765 | 0.789 | 0.777 |
-| 30 | Grok-4.1 | 0.766 | 0.776 | 0.771 |
-| 31 | Llama-3-8B | 0.710 | 0.752 | 0.731 |
+| 11 | TranslateGemma 12B | 0.819 | 0.868 | 0.843 |
+| 12 | Claude Sonnet 4.5 | 0.815 | 0.868 | 0.841 |
+| 13 | o3-mini | 0.810 | 0.865 | 0.838 |
+| 14 | GLM-4.7 | 0.811 | 0.865 | 0.838 |
+| 15 | GPT-5-mini | 0.812 | 0.861 | 0.836 |
+| 16 | o3 | 0.811 | 0.863 | 0.835 |
+| 17 | Qwen3-14B | 0.810 | 0.857 | 0.833 |
+| 18 | Llama-3.1-70B | 0.809 | 0.852 | 0.831 |
+| 19 | Dolphin3.0-R1-Mistral-24B | 0.804 | 0.850 | 0.827 |
+| 20 | DeepSeek V3.1 Think | 0.808 | 0.839 | 0.823 |
+| 21 | Mistral Large | 0.802 | 0.845 | 0.823 |
+| 22 | DeepSeek V3.2 | 0.810 | 0.833 | 0.821 |
+| 23 | Llama-3.1-405B | 0.796 | 0.838 | 0.817 |
+| 24 | Gemini 2.0 Flash | 0.813 | 0.818 | 0.816 |
+| 25 | Kimi-K2 | 0.777 | 0.841 | 0.809 |
+| 26 | Qwen3-235B-A22B | 0.813 | 0.786 | 0.800 |
+| 27 | Qwen3-32B | 0.810 | 0.788 | 0.799 |
+| 28 | DeepSeek V3.1 | 0.773 | 0.799 | 0.786 |
+| 29 | Grok-4.1-fast | 0.761 | 0.785 | 0.773 |
+| 30 | TranslateGemma 4B | 0.791 | 0.743 | 0.767 |
+| 31 | Grok-4.1 | 0.763 | 0.771 | 0.767 |
+| 32 | Llama-3-8B | 0.719 | 0.756 | 0.737 |
+| 33 | Qwen3-8B | 0.714 | 0.752 | 0.733 |
 
 Full results: [results/final_comet_scores.jsonl](results/final_comet_scores.jsonl)
 
@@ -80,7 +82,7 @@ Full results: [results/final_comet_scores.jsonl](results/final_comet_scores.json
 
 * **Paragraph-Level Evaluation** — Two datasets (Short: 180-200 chars, Long: 780-800 chars) for comprehensive paragraph translation assessment.
 * **Authoritative References** — Human translations from established fan groups and official Traditional Chinese releases.
-* **COMET-Based Scoring** — Measures semantic alignment between LLM output and reference translations using neural evaluation.
+* **XCOMET-Based Scoring** — Measures semantic alignment between LLM output and reference translations using neural evaluation.
 * **Fair Comparison** — Standardized `temperature=1.0` and unified prompts ensure reproducible, comparable results.
 
 ---
