@@ -38,7 +38,7 @@
 
 We evaluated **SOTA commercial and mainstream open-source LLMs** using the XCOMET metric.
 
-| Rank | 排名 | 模型 | 短文本 | 长文本 | 平均 |
+| Rank | Model | Short | Long | Avg |
 |:----:|:-----|:------:|:------:|:----:|
 | 🥇 | **Gemini 3 Flash Preview** | 0.826 | 0.877 | **0.851** |
 | 🥈 | **Sakura-Qwen-2.5-14B** | 0.828 | 0.874 | **0.851** |
@@ -112,11 +112,11 @@ To ensure fair scoring, we apply rigorous **anomaly detection** to all model out
 
 
 
-> **⚠️ 显著问题说明 / Known Issues**
-> 部分模型在生成结构或内容上存在严重问题，导致大量样本被数据清洗流程过滤。其最终分数仅基于少量有效样本计算，**可能无法代表其真实水平**：
-> * **Qwen3-8B**: 有效率极低（约 24.5%），大量输出包含过度重复或乱码。
-> * **Grok-4.1 / Grok-4.1-fast**: 有效率仅 50-60%，长文本生成能力极不稳定。
-> * **DeepSeek-V3.1 / Qwen3-32B**: 长文本有效率较低，存在截断或格式错误。
+> **⚠️ Known Issues**
+> Some models exhibit significant issues in generation structure or content, resulting in a large number of samples being filtered out by the data cleaning process. Their final scores are calculated based on a small number of valid samples and **may not represent their true performance**:
+> * **Qwen3-8B**: Extremely low valid rate (~24.5%), outputs contain excessive repetition or gibberish.
+> * **Grok-4.1 / Grok-4.1-fast**: Valid rate only 50-60%, long text generation is highly unstable.
+> * **DeepSeek-V3.1 / Qwen3-32B**: Low valid rate for long text, prone to truncation or formatting errors.
 
 ### Data Quality Report (Valid/Total)
 
