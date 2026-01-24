@@ -103,7 +103,7 @@ def main():
 
     # 5. Styling
     plt.title(TITLE, fontsize=20, fontweight='bold', pad=20)
-    plt.xlabel("COMET Score (Unbabel/XCOMET-XL)", fontsize=14)
+    plt.xlabel("COMET Score (Unbabel/wmt22-comet-da)", fontsize=14)
     plt.ylabel("", fontsize=12) 
     plt.legend(title="Metric", bbox_to_anchor=(1.0, 1.02), loc='upper left', fontsize=11)
     

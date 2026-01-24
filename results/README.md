@@ -4,8 +4,8 @@
 
 ```
 results/
-├── final_comet_scores.csv       # XCOMET分数汇总
-├── final_comet_scores.jsonl     # XCOMET分数详细数据
+├── final_comet_scores.csv       # COMET分数汇总
+├── final_comet_scores.jsonl     # COMET分数详细数据
 ├── model_comparison_report.html # 可视化对比报告
 ├── murasaki_benchmark_chart.png # 评测结果图表
 └── models/                      # 各模型详细结果
@@ -28,20 +28,20 @@ results/
 | `model_output` | 模型生成的译文 |
 | `model_name` | 模型名称 |
 
-> **注意**: XCOMET分数在评测流程中计算，汇总保存在 `final_comet_scores.csv` 中，不单独存储在每条记录。
+> **注意**: COMET分数在评测流程中计算，汇总保存在 `final_comet_scores.csv` 中，不单独存储在每条记录。
 
-### XCOMET分数汇总
+### COMET分数汇总
 
 `final_comet_scores.csv` 包含：
 
 | 列名 | 说明 |
 |------|------|
 | `model_name` | 模型名称 |
-| `comet` | 系统级XCOMET分数 |
-| `Short_comet` | 短文本XCOMET |
-| `Long_comet` | 长文本XCOMET |
+| `comet` | 系统级COMET分数 |
+| `Short_comet` | 短文本COMET |
+| `Long_comet` | 长文本COMET |
 
 ## 评测说明
 
-- 使用 Unbabel/XCOMET-XL 模型计算XCOMET分数
-- XCOMET分数范围通常在0-1之间，越高表示翻译质量越好
+- 使用 Unbabel/wmt22-comet-da 模型计算COMET分数
+- COMET分数范围通常在0-1之间，越高表示翻译质量越好

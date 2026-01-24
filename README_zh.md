@@ -30,13 +30,13 @@
 
 <br>
 
-> **Murasaki Benchmark** 提供两个段落级数据集（Short/Long），用于评测 LLM 翻译与专业人工译文在 **ACGN 领域**的对齐程度。通过 XCOMET 指标，我们在段落层面衡量机器翻译与权威参考译文之间的语义相似度。
+> **Murasaki Benchmark** 提供两个段落级数据集（Short/Long），用于评测 LLM 翻译与专业人工译文在 **ACGN 领域**的对齐程度。通过 COMET (wmt22-comet-da) 指标，我们在段落层面衡量机器翻译与权威参考译文之间的语义相似度。
 
 ---
 
 ## 排行榜
 
-我们使用 XCOMET 指标评测了**主流商业模型和开源模型**的日中 ACGN 翻译能力。
+我们使用 COMET (wmt22-comet-da) 指标评测了**主流商业模型和开源模型**的日中 ACGN 翻译能力。
 
 ### 长文本高分榜 (Long Text Leaderboard)
 
@@ -124,7 +124,7 @@
 
 * **段落级评测** — 两个数据集（Short: 180-200字符，Long: 780-800字符）用于全面评估段落翻译能力。
 * **权威参考译文** — 来自老牌汉化组和官方台版的专业人工翻译。
-* **XCOMET 评分** — 使用神经网络评估方法衡量 LLM 输出与参考译文的语义对齐程度。
+* **COMET 评分** — 使用神经网络评估方法衡量 LLM 输出与参考译文的语义对齐程度。
 * **公平对比** — 统一 `temperature=1.0` 和标准化 prompt，确保结果可复现、可比较。
 
 ---
@@ -228,7 +228,7 @@ graph LR
 | Temperature | 1.0 |
 | System Prompt | 标准化 ([pipeline/config.py](pipeline/config.py)) |
 | 特殊情况 | Sakura & Murasaki-8B 模型使用特定设置 |
-| 指标 | COMET (Unbabel/XCOMET-XL) |
+| 指标 | COMET (Unbabel/wmt22-comet-da) |
 
 ---
 

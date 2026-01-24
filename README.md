@@ -30,13 +30,13 @@
 
 <br>
 
-> **Murasaki Benchmark** provides two paragraph-level datasets (Short/Long) to evaluate how well LLM translations align with professional human references in the **ACGN domain**. Using XCOMET metric, we measure the semantic similarity between machine translations and authoritative reference translations at the paragraph level.
+> **Murasaki Benchmark** provides two paragraph-level datasets (Short/Long) to evaluate how well LLM translations align with professional human references in the **ACGN domain**. Using COMET (wmt22-comet-da) metric, we measure the semantic similarity between machine translations and authoritative reference translations at the paragraph level.
 
 ---
 
 ## Leaderboard
 
-We evaluated **SOTA commercial and mainstream open-source LLMs** using the XCOMET metric.
+We evaluated **SOTA commercial and mainstream open-source LLMs** using the COMET (wmt22-comet-da) metric.
 
 ### Long Text Leaderboard (Primary)
 
@@ -124,7 +124,7 @@ Full results: [results/final_comet_scores.jsonl](results/final_comet_scores.json
 
 * **Paragraph-Level Evaluation** — Two datasets (Short: 180-200 chars, Long: 780-800 chars) for comprehensive paragraph translation assessment.
 * **Authoritative References** — Human translations from established fan groups and official Traditional Chinese releases.
-* **XCOMET-Based Scoring** — Measures semantic alignment between LLM output and reference translations using neural evaluation.
+* **COMET-Based Scoring** — Measures semantic alignment between LLM output and reference translations using neural evaluation.
 * **Fair Comparison** — Standardized `temperature=1.0` and unified prompts ensure reproducible, comparable results.
 
 ---
@@ -229,7 +229,7 @@ Covers major genres from commercial light novels and *Syosetu* web novels:
 | Temperature | 1.0 |
 | System Prompt | Standardized ([pipeline/config.py](pipeline/config.py)) |
 | Special Cases | Sakura & Murasaki-8B models use custom settings |
-| Metric | COMET (Unbabel/XCOMET-XL) |
+| Metric | COMET (Unbabel/wmt22-comet-da) |
 
 ---
 
