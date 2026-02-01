@@ -40,10 +40,12 @@
 
 ### 长文本高分榜 (Long Text Leaderboard)
 
+> **注意**: Murasaki-8B 和 Sakura-14B 的结果基于 IQ4_XS 量化版本。
+
 | 排名 | 模型 | 长文本得分 |
 |:----:|:-----|:----------:|
-| 🥇 | **gemini-2.5-flash** | **0.8767** |
-| 🥈 | **murasaki-8b-v0.1** | **0.8767** |
+| 🥇 | **murasaki-8b-v0.1** | **0.8778** |
+| 🥈 | **gemini-2.5-flash** | **0.8767** |
 | 🥉 | **gemini-3-flash-preview** | **0.8765** |
 | 4 | gpt-5-chat-latest | 0.8765 |
 | 5 | gemini-3-pro-preview | 0.8744 |
@@ -82,22 +84,22 @@
 | 排名 | 模型 | 短文本得分 |
 |:----:|:-----|:-----------:|
 | 🥇 | **Sakura-qwen-2.5-14B** | **0.8282** |
-| 🥈 | **gemini-3-flash-preview** | **0.8262** |
-| 🥉 | **gpt-4.1** | **0.8259** |
-| 4 | claude-haiku-4-5-20251001-thinking | 0.8253 |
-| 5 | qwen3-235b-a22b | 0.8250 |
-| 6 | gpt-5-chat-latest | 0.8249 |
-| 7 | gemini-2.5-flash | 0.8243 |
-| 8 | claude-haiku-4-5-20251001 | 0.8239 |
-| 9 | gemini-3-pro-preview | 0.8238 |
-| 10 | claude-opus-4-5-20251101 | 0.8236 |
-| 11 | qwen3-32b | 0.8211 |
-| 12 | claude-sonnet-4-5-20250929 | 0.8208 |
-| 13 | deepseek-v3.2 | 0.8199 |
-| 14 | translategemma-12b | 0.8198 |
-| 15 | deepseek-v3.2-thinking | 0.8179 |
-| 16 | gemini-2.0-flash | 0.8176 |
-| 17 | murasaki-8b-v0.1 | 0.8172 |
+| 🥈 | **murasaki-8b-v0.1** | **0.8269** |
+| 🥉 | **gemini-3-flash-preview** | **0.8262** |
+| 4 | gpt-4.1 | 0.8259 |
+| 5 | claude-haiku-4-5-20251001-thinking | 0.8253 |
+| 6 | qwen3-235b-a22b | 0.8250 |
+| 7 | gpt-5-chat-latest | 0.8249 |
+| 8 | gemini-2.5-flash | 0.8243 |
+| 9 | claude-haiku-4-5-20251001 | 0.8239 |
+| 10 | gemini-3-pro-preview | 0.8238 |
+| 11 | claude-opus-4-5-20251101 | 0.8236 |
+| 12 | qwen3-32b | 0.8211 |
+| 13 | claude-sonnet-4-5-20250929 | 0.8208 |
+| 14 | deepseek-v3.2 | 0.8199 |
+| 15 | translategemma-12b | 0.8198 |
+| 16 | deepseek-v3.2-thinking | 0.8179 |
+| 17 | gemini-2.0-flash | 0.8176 |
 | 18 | deepseek-v3.1 | 0.8144 |
 | 19 | gpt-5-mini | 0.8139 |
 | 20 | qwen3-14b | 0.8133 |
@@ -164,7 +166,7 @@ graph LR
 |:-----|:--------------:|:-------------:|:----------:|
 | claude-haiku-4-5-20251001 | 100/100 | 100/100 | 100.0% |
 | claude-opus-4-5-20251101 | 100/100 | 100/100 | 100.0% |
-| murasaki-8b-v0.1 | 100/100 | 99/99 | 100.0% |
+| murasaki-8b-v0.1 | 100/100 | 100/100 | 100.0% |
 | claude-haiku-4-5-20251001-thinking | 100/100 | 100/100 | 100.0% |
 | Sakura-qwen-2.5-14B | 100/100 | 100/100 | 100.0% |
 | gemini-3-pro-preview | 100/100 | 100/100 | 100.0% |
