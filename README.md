@@ -236,8 +236,38 @@ Covers major genres from commercial light novels and *Syosetu* web novels:
 |-----------|-------|
 | Temperature | 1.0 |
 | System Prompt | Standardized ([pipeline/config.py](pipeline/config.py)) |
-| Special Cases | Sakura & Murasaki-8B models use custom settings |
+| Special Cases | Sakura & Murasaki models use custom settings |
 | Metric | COMET (Unbabel/wmt22-comet-da) |
+
+---
+
+## 📦 Dataset
+
+The benchmark dataset is included in the [`data/`](data/) directory. Clone the repository to use it.
+
+### File Structure
+
+```text
+data/
+├── dataset_short.jsonl   # Short text benchmark (100 samples, 180-200 chars)
+├── dataset_long.jsonl    # Long text benchmark (100 samples, 780-800 chars)
+└── README.md             # Detailed dataset documentation
+```
+
+### Data Format (JSONL)
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `src` | string | Japanese source text |
+| `ref` | string | Chinese reference translation |
+| `category` | string | Category: `Short` or `Long` |
+
+**Example**:
+```json
+{"src": "「そうだな、玄霧のほうが顔の造形に隙がない」", "ref": "「是啊，玄雾的脸型比较没有瑕疵。」", "category": "Short"}
+```
+
+> 📖 See [data/README.md](data/README.md) for full documentation.
 
 ---
 
