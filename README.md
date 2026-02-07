@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/License-GPL%203.0-blue.svg" alt="License">
   </a>
   <img src="https://img.shields.io/badge/Python-3.10+-green" alt="Python">
-  <img src="https://img.shields.io/badge/Models-34-orange" alt="Models">
+  <img src="https://img.shields.io/badge/Models-36-orange" alt="Models">
   <img src="https://img.shields.io/badge/Domain-ACGN-pink" alt="Domain">
 </p>
 
