@@ -5,7 +5,9 @@
 {"model_name": "gemini-3-pro-preview", "comet": 0.8490789717435837, "Long_comet": 0.8743618237972259, "Short_comet": 0.8237961196899414}
 {"model_name": "gpt-4.1", "comet": 0.8489552230545969, "Long_comet": 0.87243125085928, "Short_comet": 0.8259487158060074}
 {"model_name": "claude-opus-4-5-20251101", "comet": 0.8484157276153564, "Long_comet": 0.8732468068599701, "Short_comet": 0.8235846483707427}
-{"model_name": "murasaki-8b-v0.1", "comet": 0.8467917668460002, "Long_comet": 0.8766878789121454, "Short_comet": 0.8171946159005166}
+{"model_name": "murasaki-8b-v0.1", "comet": 0.8523204761743546, "Long_comet": 0.8777633702754974, "Short_comet": 0.8268775820732117}
+{"model_name": "murasaki-8b-v0.2", "comet": 0.8521838724613190, "Long_comet": 0.8773081183433533, "Short_comet": 0.8270596265792847}
+{"model_name": "murasaki-14b-v0.2", "comet": 0.8545055508613587, "Long_comet": 0.8800901114940644, "Short_comet": 0.828920990228653}
 {"model_name": "claude-haiku-4-5-20251001", "comet": 0.8463799951970578, "Long_comet": 0.8688245245814323, "Short_comet": 0.8239354658126831}
 {"model_name": "claude-haiku-4-5-20251001-thinking", "comet": 0.8449030956625938, "Long_comet": 0.8645216763019562, "Short_comet": 0.8252845150232315}
 {"model_name": "claude-sonnet-4-5-20250929", "comet": 0.8448395796311208, "Long_comet": 0.868190145853794, "Short_comet": 0.8207593082139889}

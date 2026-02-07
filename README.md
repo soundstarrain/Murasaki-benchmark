@@ -172,6 +172,8 @@ To ensure fair scoring, we apply rigorous **anomaly detection** to all model out
 | claude-haiku-4-5-20251001 | 100/100 | 100/100 | 100.0% |
 | claude-opus-4-5-20251101 | 100/100 | 100/100 | 100.0% |
 | murasaki-8b-v0.1 | 100/100 | 100/100 | 100.0% |
+| murasaki-8b-v0.2 | 100/100 | 100/100 | 100.0% |
+| murasaki-14b-v0.2 | 100/100 | 100/100 | 100.0% |
 | claude-haiku-4-5-20251001-thinking | 100/100 | 100/100 | 100.0% |
 | Sakura-qwen-2.5-14B | 100/100 | 100/100 | 100.0% |
 | gemini-3-pro-preview | 100/100 | 100/100 | 100.0% |
