@@ -40,87 +40,89 @@
 
 ### 长文本高分榜 (Long Text Leaderboard)
 
-> **注意**: Murasaki 和 Sakura 模型的结果基于 IQ4_XS 量化版本。
+> **æ³¨æ**: ä¸æ¹æè¡æ¦ä¸­ç Murasaki æ¡ç®ä»ä¿ç `IQ4_XS`ã`t=0.3` çç»æï¼Sakura ç»æä¸º `IQ4_XS`ã`t=0.1`ã
 
 | 排名 | 模型 | 长文本得分 |
 |:----:|:-----|:----------:|
-| 🥇 | **murasaki-14b-v0.2** | **0.8801** |
-| 🥈 | **murasaki-8b-v0.1** | **0.8778** |
-| 🥉 | **murasaki-8b-v0.2** | **0.8773** |
-| 4 | gemini-2.5-flash | 0.8767 |
-| 5 | gemini-3-flash-preview | 0.8765 |
-| 6 | gpt-5-chat-latest | 0.8765 |
-| 7 | gemini-3-pro-preview | 0.8744 |
-| 8 | deepseek-v3.2 | 0.8738 |
-| 9 | Sakura-qwen-2.5-14B | 0.8735 |
-| 10 | claude-opus-4-5-20251101 | 0.8732 |
-| 11 | gpt-4.1 | 0.8724 |
-| 12 | deepseek-v3.1 | 0.8714 |
-| 13 | qwen3-14b | 0.8702 |
-| 14 | deepseek-v3.2-thinking | 0.8701 |
-| 15 | qwen3-32b | 0.8699 |
-| 16 | qwen3-8b | 0.8698 |
-| 17 | translategemma-12b | 0.8688 |
-| 18 | claude-haiku-4-5-20251001 | 0.8688 |
-| 19 | gemini-2.0-flash | 0.8688 |
-| 20 | claude-sonnet-4-5-20250929 | 0.8682 |
-| 21 | Dolphin3.0-R1-Mistral-24B | 0.8678 |
-| 22 | mistral-large-latest | 0.8672 |
-| 23 | qwen3-235b-a22b | 0.8667 |
-| 24 | glm-4.7 | 0.8661 |
-| 25 | llama-3.1-405b | 0.8657 |
-| 26 | o3-mini | 0.8654 |
-| 27 | gpt-5-mini | 0.8651 |
-| 28 | grok-4.1-fast | 0.8648 |
-| 29 | claude-haiku-4-5-20251001-thinking | 0.8645 |
-| 30 | o3 | 0.8642 |
-| 31 | deepseek-v3-1-think-250821 | 0.8631 |
-| 32 | llama-3.1-70b | 0.8562 |
-| 33 | grok-4.1 | 0.8543 |
-| 34 | kimi-k2 | 0.8412 |
-| 35 | translategemma-4b | 0.8088 |
-| 36 | llama-3-8b | 0.7626 |
+| 🥇 | **murasaki-8b-v0.2 (IQ4_XS, t=0.3)** | **0.8802** |
+| 🥈 | **murasaki-14b-v0.2 (IQ4_XS, t=0.3)** | **0.8798** |
+| 🥉 | **murasaki-4b-v0.2-think (IQ4_XS, t=0.3)** | **0.8784** |
+| 4 | murasaki-4b-v0.2-nonthink (IQ4_XS, t=0.3) | 0.8779 |
+| 5 | gemini-2.5-flash | 0.8767 |
+| 6 | gemini-3-flash-preview | 0.8765 |
+| 7 | gpt-5-chat-latest | 0.8765 |
+| 8 | gemini-3-pro-preview | 0.8744 |
+| 9 | deepseek-v3.2 | 0.8738 |
+| 10 | Sakura-qwen-2.5-14B (IQ4_XS, t=0.1) | 0.8735 |
+| 11 | claude-opus-4-5-20251101 | 0.8732 |
+| 12 | gpt-4.1 | 0.8724 |
+| 13 | deepseek-v3.1 | 0.8714 |
+| 14 | qwen3-14b | 0.8702 |
+| 15 | deepseek-v3.2-thinking | 0.8701 |
+| 16 | qwen3-32b | 0.8699 |
+| 17 | qwen3-8b | 0.8698 |
+| 18 | translategemma-12b | 0.8688 |
+| 19 | claude-haiku-4-5-20251001 | 0.8688 |
+| 20 | gemini-2.0-flash | 0.8688 |
+| 21 | claude-sonnet-4-5-20250929 | 0.8682 |
+| 22 | Dolphin3.0-R1-Mistral-24B | 0.8678 |
+| 23 | mistral-large-latest | 0.8672 |
+| 24 | qwen3-235b-a22b | 0.8667 |
+| 25 | glm-4.7 | 0.8661 |
+| 26 | llama-3.1-405b | 0.8657 |
+| 27 | o3-mini | 0.8654 |
+| 28 | gpt-5-mini | 0.8651 |
+| 29 | grok-4.1-fast | 0.8648 |
+| 30 | claude-haiku-4-5-20251001-thinking | 0.8645 |
+| 31 | o3 | 0.8642 |
+| 32 | deepseek-v3-1-think-250821 | 0.8631 |
+| 33 | llama-3.1-70b | 0.8562 |
+| 34 | grok-4.1 | 0.8543 |
+| 35 | kimi-k2 | 0.8412 |
+| 36 | translategemma-4b | 0.8088 |
+| 37 | llama-3-8b | 0.7626 |
 
 ### 短文本高分榜 (Short Text Leaderboard)
 
 | 排名 | 模型 | 短文本得分 |
 |:----:|:-----|:-----------:|
-| 🥇 | **murasaki-14b-v0.2** | **0.8289** |
-| 🥈 | **Sakura-qwen-2.5-14B** | **0.8282** |
-| 🥉 | **murasaki-8b-v0.2** | **0.8271** |
-| 4 | murasaki-8b-v0.1 | 0.8269 |
-| 5 | gemini-3-flash-preview | 0.8262 |
-| 6 | gpt-4.1 | 0.8259 |
-| 7 | claude-haiku-4-5-20251001-thinking | 0.8253 |
-| 8 | qwen3-235b-a22b | 0.8250 |
-| 9 | gpt-5-chat-latest | 0.8249 |
-| 10 | gemini-2.5-flash | 0.8243 |
-| 11 | claude-haiku-4-5-20251001 | 0.8239 |
-| 12 | gemini-3-pro-preview | 0.8238 |
-| 13 | claude-opus-4-5-20251101 | 0.8236 |
-| 14 | qwen3-32b | 0.8211 |
-| 15 | claude-sonnet-4-5-20250929 | 0.8208 |
-| 16 | deepseek-v3.2 | 0.8199 |
-| 17 | translategemma-12b | 0.8198 |
-| 18 | deepseek-v3.2-thinking | 0.8179 |
-| 19 | gemini-2.0-flash | 0.8176 |
-| 20 | deepseek-v3.1 | 0.8144 |
-| 21 | gpt-5-mini | 0.8139 |
-| 22 | qwen3-14b | 0.8133 |
-| 23 | deepseek-v3-1-think-250821 | 0.8118 |
-| 24 | o3-mini | 0.8115 |
-| 25 | Dolphin3.0-R1-Mistral-24B | 0.8108 |
-| 26 | o3 | 0.8107 |
-| 27 | glm-4.7 | 0.8102 |
-| 28 | llama-3.1-70b | 0.8089 |
-| 29 | grok-4.1 | 0.8088 |
-| 30 | mistral-large-latest | 0.8084 |
-| 31 | qwen3-8b | 0.8079 |
-| 32 | llama-3.1-405b | 0.8077 |
-| 33 | grok-4.1-fast | 0.8002 |
-| 34 | translategemma-4b | 0.7923 |
-| 35 | kimi-k2 | 0.7830 |
-| 36 | llama-3-8b | 0.7198 |
+| 🥇 | **murasaki-14b-v0.2 (IQ4_XS, t=0.3)** | **0.8332** |
+| 🥈 | **murasaki-4b-v0.2-nonthink (IQ4_XS, t=0.3)** | **0.8323** |
+| 🥉 | **murasaki-8b-v0.2 (IQ4_XS, t=0.3)** | **0.8302** |
+| 4 | murasaki-4b-v0.2-think (IQ4_XS, t=0.3) | 0.8283 |
+| 5 | Sakura-qwen-2.5-14B (IQ4_XS, t=0.1) | 0.8282 |
+| 6 | gemini-3-flash-preview | 0.8262 |
+| 7 | gpt-4.1 | 0.8259 |
+| 8 | claude-haiku-4-5-20251001-thinking | 0.8253 |
+| 9 | qwen3-235b-a22b | 0.8250 |
+| 10 | gpt-5-chat-latest | 0.8249 |
+| 11 | gemini-2.5-flash | 0.8243 |
+| 12 | claude-haiku-4-5-20251001 | 0.8239 |
+| 13 | gemini-3-pro-preview | 0.8238 |
+| 14 | claude-opus-4-5-20251101 | 0.8236 |
+| 15 | qwen3-32b | 0.8211 |
+| 16 | claude-sonnet-4-5-20250929 | 0.8208 |
+| 17 | deepseek-v3.2 | 0.8199 |
+| 18 | translategemma-12b | 0.8198 |
+| 19 | deepseek-v3.2-thinking | 0.8179 |
+| 20 | gemini-2.0-flash | 0.8176 |
+| 21 | deepseek-v3.1 | 0.8144 |
+| 22 | gpt-5-mini | 0.8139 |
+| 23 | qwen3-14b | 0.8133 |
+| 24 | deepseek-v3-1-think-250821 | 0.8118 |
+| 25 | o3-mini | 0.8115 |
+| 26 | Dolphin3.0-R1-Mistral-24B | 0.8108 |
+| 27 | o3 | 0.8107 |
+| 28 | glm-4.7 | 0.8102 |
+| 29 | llama-3.1-70b | 0.8089 |
+| 30 | grok-4.1 | 0.8088 |
+| 31 | mistral-large-latest | 0.8084 |
+| 32 | qwen3-8b | 0.8079 |
+| 33 | llama-3.1-405b | 0.8077 |
+| 34 | grok-4.1-fast | 0.8002 |
+| 35 | translategemma-4b | 0.7923 |
+| 36 | kimi-k2 | 0.7830 |
+| 37 | llama-3-8b | 0.7198 |
 
 完整结果: [results/final_comet_scores.jsonl](results/final_comet_scores.jsonl)
 
