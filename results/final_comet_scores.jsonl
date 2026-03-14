@@ -1,3 +1,7 @@
+{"model_name": "murasaki-14b-v0.2", "comet": 0.8565037304162979, "Long_comet": 0.8798494386672974, "Short_comet": 0.8331580221652984}
+{"model_name": "murasaki-8b-v0.2", "comet": 0.8551888346672059, "Long_comet": 0.8801610320806503, "Short_comet": 0.8302166372537613}
+{"model_name": "murasaki-4b-v0.2-nonthink", "comet": 0.8551079222559929, "Long_comet": 0.8779282629489898, "Short_comet": 0.8322875815629959}
+{"model_name": "murasaki-4b-v0.2-think", "comet": 0.8533723092079163, "Long_comet": 0.8784125292301178, "Short_comet": 0.8283320891857148}
 {"model_name": "gemini-3-flash-preview", "comet": 0.8512368702409255, "Long_comet": 0.8765274972626658, "Short_comet": 0.8261991494894028}
 {"model_name": "Sakura-qwen-2.5-14B", "comet": 0.850882797241211, "Long_comet": 0.8735321033000946, "Short_comet": 0.8282334911823273}
 {"model_name": "gpt-5-chat-latest", "comet": 0.8503325248732785, "Long_comet": 0.8765005033040784, "Short_comet": 0.8249495857954026}
@@ -5,9 +9,6 @@
 {"model_name": "gemini-3-pro-preview", "comet": 0.8490789717435837, "Long_comet": 0.8743618237972259, "Short_comet": 0.8237961196899414}
 {"model_name": "gpt-4.1", "comet": 0.8489552230545969, "Long_comet": 0.87243125085928, "Short_comet": 0.8259487158060074}
 {"model_name": "claude-opus-4-5-20251101", "comet": 0.8484157276153564, "Long_comet": 0.8732468068599701, "Short_comet": 0.8235846483707427}
-{"model_name": "murasaki-8b-v0.1", "comet": 0.8523204761743546, "Long_comet": 0.8777633702754974, "Short_comet": 0.8268775820732117}
-{"model_name": "murasaki-8b-v0.2", "comet": 0.8521838724613190, "Long_comet": 0.8773081183433533, "Short_comet": 0.8270596265792847}
-{"model_name": "murasaki-14b-v0.2", "comet": 0.8545055508613587, "Long_comet": 0.8800901114940644, "Short_comet": 0.828920990228653}
 {"model_name": "claude-haiku-4-5-20251001", "comet": 0.8463799951970578, "Long_comet": 0.8688245245814323, "Short_comet": 0.8239354658126831}
 {"model_name": "claude-haiku-4-5-20251001-thinking", "comet": 0.8449030956625938, "Long_comet": 0.8645216763019562, "Short_comet": 0.8252845150232315}
 {"model_name": "claude-sonnet-4-5-20250929", "comet": 0.8448395796311208, "Long_comet": 0.868190145853794, "Short_comet": 0.8207593082139889}
